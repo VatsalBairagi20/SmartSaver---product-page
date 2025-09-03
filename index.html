@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <favicon type="image/png" href="favicon.png"/>
+    <title>SmartSaver - Your Personal Savings Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 100%);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                <h1 class="text-2xl font-bold text-gray-900">SmartSaver</h1>
+            </div>
+            <a href="#download-apk" class="bg-blue-500 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300">
+                Download
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero-gradient pt-32 pb-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                Reach Your Savings Goals, <span class="text-blue-500">Smarter.</span>
+            </h2>
+            <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+                SmartSaver is your personal companion to help you create, track, and achieve your financial goals with ease. Stop dreaming, start saving.
+            </p>
+            <a href="#download-apk" class="mt-8 inline-block bg-blue-500 text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-600 transition-transform transform hover:scale-105 duration-300">
+                Download for Android
+            </a>
+
+            <div class="mt-16 flex justify-center">
+                <div class="relative w-64 md:w-72">
+                    <!-- IMPORTANT: Replace this 'src' with the public URL to your dashboard screenshot -->
+                    <img src="Dashboard Screen.png" alt="SmartSaver App Dashboard" class="rounded-3xl shadow-2xl floating">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-gray-900">Everything You Need to Succeed</h3>
+                <p class="text-lg text-gray-600 mt-4">Powerful features designed to make saving simple and motivating.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <!-- Feature 1: Create Goals -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-blue-100 p-4 rounded-full">
+                        <svg class="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M12 6V4m0 16v-2M5 12h14"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mt-4 mb-2">Create Custom Goals</h4>
+                    <p class="text-gray-600">
+                        Set clear, achievable goals for everything you're saving for, from a new car to your next vacation.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Track Progress -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-green-100 p-4 rounded-full">
+                        <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mt-4 mb-2">Track Your Progress</h4>
+                    <p class="text-gray-600">
+                        Visualize how close you are to your target with intuitive progress bars and a detailed transaction history.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Simple Transactions -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-100 p-4 rounded-full">
+                        <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mt-4 mb-2">Easy Transactions</h4>
+                    <p class="text-gray-600">
+                        Add or withdraw money from your goals effortlessly with our simple and secure mock payment process.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- App Showcase Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-bold text-gray-900">See SmartSaver in Action</h3>
+                <p class="text-lg text-gray-600 mt-4">A simple and beautiful interface to manage your savings.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <!-- IMPORTANT: Replace these src attributes with public URLs to your screenshots -->
+                <img src="Splash Screen.png" alt="Splash Screen" class="rounded-2xl shadow-lg w-full">
+                <img src="login page.png" alt="Login Screen" class="rounded-2xl shadow-lg w-full mt-8 md:mt-0">
+                <img src="Dashboard Screen.png" alt="Dashboard Screen" class="rounded-2xl shadow-lg w-full mt-8 md:mt-0">
+                <img src="Goal Details Screen.png" alt="Goal Details Screen" class="rounded-2xl shadow-lg w-full mt-8 md:mt-0">
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold text-gray-900">New Features Coming Soon!</h3>
+            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">We're constantly working to make SmartSaver even better. Here's a sneak peek at what's next.</p>
+            <div class="mt-12 grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold text-blue-500 mb-2">Smart Alerts</h4>
+                    <p class="text-gray-600">Get smart notification alerts to stay on track with your saving habits.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold text-blue-500 mb-2">Motivational Messages</h4>
+                    <p class="text-gray-600">Receive encouraging messages to keep your motivation high and celebrate milestones.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold text-blue-500 mb-2">AI Suggestions</h4>
+                    <p class="text-gray-600">Personalized AI-powered suggestions to help you find new ways to save money.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="download-apk" class="bg-blue-500 text-white">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h3 class="text-4xl font-bold">Ready to Start Saving?</h3>
+            <p class="mt-4 text-lg text-blue-100 max-w-xl mx-auto">
+                Download SmartSaver today and take the first step towards achieving your financial dreams.
+            </p>
+            <!-- IMPORTANT: Replace the '#' in href with the public link to your .apk file -->
+            <a href="sha256:270053ca2ee066b011a86b9d287db851d653e6ebf35f3cff7d7b9d4f618c2c11" class="mt-8 inline-block bg-white text-blue-500 font-bold px-8 py-4 rounded-lg text-lg hover:bg-gray-100 transition-transform transform hover:scale-105 duration-300">
+                Download the APK
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+            <p>&copy; 2025 SmartSaver. All rights reserved.</p>
+            <p class="mt-2 text-sm">Designed & Developed by Vatsal Bairagi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
